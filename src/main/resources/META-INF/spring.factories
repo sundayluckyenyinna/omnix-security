@@ -1,0 +1,15 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.accionmfb.omnix.checkpoint.config.OmnixSecurityUtilityConfig,\
+  com.accionmfb.omnix.checkpoint.filters.AppUserExistenceCheckpoint,\
+  com.accionmfb.omnix.checkpoint.filters.AppUserEndpointPermissionCheckpoint,\
+  com.accionmfb.omnix.checkpoint.filters.AppUserConnectingIPCheckpoint,\
+  com.accionmfb.omnix.checkpoint.filters.AppUserAuthorizationTokenCheckPoint,\
+  com.accionmfb.omnix.checkpoint.interceptors.config.WebConfigurerInterceptorRegistration,\
+  com.accionmfb.omnix.checkpoint.interceptors.config.CustomInterceptorRegistration,\
+  com.accionmfb.omnix.checkpoint.interceptors.PersonalAccessTokenValidationInterceptor,\
+  com.accionmfb.omnix.checkpoint.interceptors.CustomerExistenceAndStatusValidationInterceptor,\
+  com.accionmfb.omnix.checkpoint.interceptors.CustomValidationInterceptor,\
+  com.accionmfb.omnix.checkpoint.jwt.PatJwtTokenUtil,\
+  com.accionmfb.omnix.checkpoint.jwt.AppUserJwtTokenUtil,\
+  com.accionmfb.omnix.checkpoint.service.OmnixSecurityDatasourceRecordServiceImpl,\
+  com.accionmfb.omnix.checkpoint.util.OmnixSecurityApplicationServiceUtil
